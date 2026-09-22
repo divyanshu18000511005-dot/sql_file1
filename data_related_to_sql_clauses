@@ -1,0 +1,21 @@
+CREATE TABLE Employee (
+    Emp_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Department VARCHAR(50),
+    City VARCHAR(50),
+    Salary INT
+);
+
+INSERT INTO Employee (Emp_ID, Name, Department, City, Salary)
+VALUES
+(101, 'Rahul', 'IT', 'Delhi', 50000),
+(102, 'Amit', 'HR', 'Kanpur', 40000),
+(103, 'Priya', 'IT', 'Delhi', 60000),
+(104, 'Neha', 'Sales', 'Agra', 35000),
+(105, 'Ravi', 'HR', 'Delhi', 45000),
+(106, 'Pooja', 'Sales', 'Kanpur', 38000),
+(107, 'Ankit', 'IT', 'Agra', 55000),
+(108, 'Sneha', 'Sales', 'Delhi', 42000),
+(109, 'Mohit', 'HR', 'Agra', 48000),
+(110, 'Kiran', 'IT', 'Kanpur', 65000);
+
