@@ -1,0 +1,37 @@
+CREATE DATABASE window_case_practice;
+USE window_case_practice;
+
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(50),
+    department VARCHAR(30),
+    gender VARCHAR(10),
+    city VARCHAR(30),
+    salary INT,
+    experience INT,
+    joining_date DATE,
+    performance_score INT,
+    manager_id INT
+);
+
+INSERT INTO employees VALUES
+(101, 'Rahul',  'IT',        'Male',   'Delhi',     65000, 5, '2020-01-15', 85, NULL),
+(102, 'Priya',  'HR',        'Female', 'Noida',     55000, 4, '2021-03-10', 78, NULL),
+(103, 'Amit',   'IT',        'Male',   'Delhi',     75000, 7, '2018-06-20', 92, 101),
+(104, 'Neha',   'Sales',     'Female', 'Agra',      48000, 3, '2022-01-12', 70, 105),
+(105, 'Ravi',   'Sales',     'Male',   'Noida',     60000, 6, '2019-08-05', 88, NULL),
+(106, 'Pooja',  'HR',        'Female', 'Delhi',     62000, 5, '2020-11-18', 95, 102),
+(107, 'Karan',  'IT',        'Male',   'Gurgaon',   58000, 4, '2021-07-25', 76, 101),
+(108, 'Sneha',  'Finance',   'Female', 'Delhi',     70000, 8, '2017-04-14', 90, NULL),
+(109, 'Vikas',  'Finance',   'Male',   'Noida',     52000, 3, '2022-05-19', 68, 108),
+(110, 'Anjali', 'Sales',     'Female', 'Agra',      54000, 4, '2021-09-11', 82, 105),
+(111, 'Mohit',  'IT',        'Male',   'Noida',     82000, 9, '2016-02-10', 96, 101),
+(112, 'Riya',   'HR',        'Female', 'Gurgaon',   47000, 2, '2023-01-16', 65, 102),
+(113, 'Arjun',  'Finance',   'Male',   'Delhi',     68000, 6, '2019-12-02', 87, 108),
+(114, 'Kavita', 'Sales',     'Female', 'Noida',     59000, 5, '2020-06-08', 91, 105),
+(115, 'Suresh', 'IT',        'Male',   'Agra',      50000, 2, '2023-03-21', 72, 101),
+(116, 'Meena',  'Finance',   'Female', 'Gurgaon',   63000, 7, '2018-10-30', 84, 108),
+(117, 'Deepak', 'HR',        'Male',   'Delhi',     51000, 3, '2022-08-15', 74, 102),
+(118, 'Nisha',  'Sales',     'Female', 'Delhi',     67000, 7, '2018-05-22', 94, 105),
+(119, 'Rohit',  'IT',        'Male',   'Gurgaon',   71000, 6, '2019-04-17', 89, 101),
+(120, 'Shweta', 'HR',        'Female', 'Agra',      56000, 4, '2021-12-01', 80, 102);
